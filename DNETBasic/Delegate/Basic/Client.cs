@@ -1,4 +1,5 @@
 ﻿using Delegate.Basic.Practical1;
+using Delegate.Basic.Practical2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,15 +31,33 @@ namespace Delegate.Basic
             #endregion
 
             #region For practical 1
-            //DoubleOp[] operations = { MathOperations.MultiplyByTwo, MathOperations.Square };
-            Func<double, double>[] operations = { MathOperations.MultiplyByTwo, MathOperations.Square };
-            for (int i = 0; i < operations.Length; i++)
+            ////DoubleOp[] operations = { MathOperations.MultiplyByTwo, MathOperations.Square };
+            //Func<double, double>[] operations = { MathOperations.MultiplyByTwo, MathOperations.Square };
+            //for (int i = 0; i < operations.Length; i++)
+            //{
+            //    Console.WriteLine("Using operations [{0}]", i);
+            //    ProcessAndDisplayNumbers(operations[i], 2.0);
+            //    ProcessAndDisplayNumbers(operations[i], 7.94);
+            //    ProcessAndDisplayNumbers(operations[i], 1.414);
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region For Practical 2
+            Employee[] employees = 
             {
-                Console.WriteLine("Using operations [{0}]", i);
-                ProcessAndDisplayNumbers(operations[i], 2.0);
-                ProcessAndDisplayNumbers(operations[i], 7.94);
-                ProcessAndDisplayNumbers(operations[i], 1.414);
-                Console.WriteLine();
+                new Employee("Bugs Bunny1",20000),
+                new Employee("Bugs Bunny2",50000),
+                new Employee("Bugs Bunny3",70000),
+                new Employee("Bugs Bunny4",10000),
+                new Employee("Bugs Bunny5",30000)
+            };
+
+            BubbleSorter.Sort<Employee>(employees, Employee.CompareSalary);
+
+            foreach(var employee in employees)
+            {
+                Console.WriteLine(employee);
             }
             #endregion
 

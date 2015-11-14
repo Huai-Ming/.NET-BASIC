@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Basic\Client.cs" />
     <Compile Include="Basic\Practical1\MathOperations.cs" />
+    <Compile Include="Basic\Practical2\BubbleSorter.cs" />
+    <Compile Include="Basic\Practical2\Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
