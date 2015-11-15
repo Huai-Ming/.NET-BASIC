@@ -17,7 +17,7 @@ namespace Delegate.Basic
         //For Practical1
         public delegate double DoubleOp(double x);
 
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             #region For Practice
             ////Add the basic delegate appliance
@@ -44,23 +44,47 @@ namespace Delegate.Basic
             #endregion
 
             #region For Practical 2
-            Employee[] employees = 
-            {
-                new Employee("Bugs Bunny1",20000),
-                new Employee("Bugs Bunny2",50000),
-                new Employee("Bugs Bunny3",70000),
-                new Employee("Bugs Bunny4",10000),
-                new Employee("Bugs Bunny5",30000)
-            };
+            //Employee[] employees = 
+            //{
+            //    new Employee("Bugs Bunny1",20000),
+            //    new Employee("Bugs Bunny2",50000),
+            //    new Employee("Bugs Bunny3",70000),
+            //    new Employee("Bugs Bunny4",10000),
+            //    new Employee("Bugs Bunny5",30000)
+            //};
 
-            BubbleSorter.Sort<Employee>(employees, Employee.CompareSalary);
+            //BubbleSorter.Sort<Employee>(employees, Employee.CompareSalary);
 
-            foreach(var employee in employees)
-            {
-                Console.WriteLine(employee);
-            }
+            //foreach(var employee in employees)
+            //{
+            //    Console.WriteLine(employee);
+            //}
             #endregion
 
+            #region Anonymous Delegate
+
+            string mid = ", middle part,";
+            //Func<string, string> annoDel = delegate(string param)
+            //{
+            //    param += mid;
+            //    param += " and this was added to the string.";
+            //    return param;
+            //};
+
+            //Here we can use the lamda expression
+            Func<string, string> annoDel = param =>
+            {
+                param += mid;
+                param += " and this was added to the string.";
+                return param;
+            };
+            Console.WriteLine(annoDel("Start of string"));
+
+            Func<double, double, double> twoParams = (double x, double y) => x * y;
+            Console.WriteLine(twoParams(3, 4));
+            #endregion
+
+            
             Console.ReadKey();
         }
 
