@@ -1,0 +1,24 @@
+﻿一个进程的多个线程可以同时运行在不同的CPU上，或多核CPU的不同内核上。如果线程访问相同的数据，就容易出问题，必须实现同步机制。
+
+运行在服务器上的应用程序中，等待客户请求的线程，成为侦听器线程。只要接受到请求，就把它传递给另一个工作线程，之后继续与客户通信。
+
+进程包含资源，如WIndow句柄，文件系统句柄或者其他内核对象。每个进程都分配了虚拟内存，一个进程至少包含一个线程。操作系统会调用线程。线程有一个优先级。每个线程都有自己的栈，但程序代码的内存和堆由一个进程的所有线程共享。线程是程序运行的最小单位。
+
+1，等待异步委托的第一个方式， IAsyncResult.IsCompleted;
+2, 使用与IAsyncResult相关联的等待句柄；
+3，使用异步回调。
+AysncCallBack 委托定义了一个IAsyncReusult 类型的参数，其返回类型是void;
+
+使用Thread类可以创建和控制线程。 Thread类的构造函数重载为接受ThreadStart和ParameterizedThreadStart类型的委托参数。Thread Start委托定义了一个返回类型为void 的无参方法。
+
+只要有一个前台线程在运行，应用程序的进程就在运行。
+如果多个前台线程在运行，而Main（）方法结束了，应用程序的进程仍然是激活的。直到所有前台线程完成任务为止。
+在默认情况下，用Thread类创建的线程是前台线程。线程池里的线程总是后台线程。
+
+在Thread类中，可以设置Priority属性，以影响线程的基本优先级；Priority属性需要ThreadPriority枚举定义的一个值，定义的级别有Highest，Above Normal, BelowNomal和Loweset；
+
+调用线程Thread对象的Start（）方法，可以创建线程。但是，在调用Start（)方法后，新线程仍不是处于Running状态，而是处于Unstart状态。
+
+要停止另一个线程，可以调用Thread.Absort(）方法。
+
+如果需要等待线程的结束，就可以调用Thread.Join()方法。Thread.Join(）方法会停止当前线程，并把它设置为WaitSleepJoin状态，直到加入的线程完成为止。
