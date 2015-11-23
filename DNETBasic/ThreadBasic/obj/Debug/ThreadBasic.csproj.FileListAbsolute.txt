@@ -1,0 +1,6 @@
+C:\Users\lihuai\Documents\GitHub\.NET-BASIC\DNETBasic\ThreadBasic\bin\Debug\ThreadBasic.exe.config
+C:\Users\lihuai\Documents\GitHub\.NET-BASIC\DNETBasic\ThreadBasic\obj\Debug\ThreadBasic.csprojResolveAssemblyReference.cache
+C:\Users\lihuai\Documents\GitHub\.NET-BASIC\DNETBasic\ThreadBasic\bin\Debug\ThreadBasic.exe
+C:\Users\lihuai\Documents\GitHub\.NET-BASIC\DNETBasic\ThreadBasic\bin\Debug\ThreadBasic.pdb
+C:\Users\lihuai\Documents\GitHub\.NET-BASIC\DNETBasic\ThreadBasic\obj\Debug\ThreadBasic.exe
+C:\Users\lihuai\Documents\GitHub\.NET-BASIC\DNETBasic\ThreadBasic\obj\Debug\ThreadBasic.pdb

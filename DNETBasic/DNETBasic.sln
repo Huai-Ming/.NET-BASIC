@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Threads", "Threads", "{D39A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadBasic", "ThreadBasic\ThreadBasic.csproj", "{89A65460-A8D8-4369-B0C0-109A39F67243}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task", "Task", "{3F4DC4E4-B643-4BCA-B1A5-1BA88076E0A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks", "Tasks\Tasks.csproj", "{C8AC816E-0C01-4DE1-A4D7-AA5EE5739FB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +27,16 @@ Global
 		{89A65460-A8D8-4369-B0C0-109A39F67243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89A65460-A8D8-4369-B0C0-109A39F67243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89A65460-A8D8-4369-B0C0-109A39F67243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8AC816E-0C01-4DE1-A4D7-AA5EE5739FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AC816E-0C01-4DE1-A4D7-AA5EE5739FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8AC816E-0C01-4DE1-A4D7-AA5EE5739FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AC816E-0C01-4DE1-A4D7-AA5EE5739FB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89A65460-A8D8-4369-B0C0-109A39F67243} = {D39A832C-A127-447B-8B6A-607983571A9A}
+		{C8AC816E-0C01-4DE1-A4D7-AA5EE5739FB3} = {3F4DC4E4-B643-4BCA-B1A5-1BA88076E0A4}
 	EndGlobalSection
 EndGlobal
